@@ -1,0 +1,196 @@
+{% include "_partials/_header.html" %}
+
+<section class="hero">
+    <!-- Carousel restaurant -->
+
+    <div class="swiper" data-component="Carousel" data-autoplay data-loop data-space>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="img_hero" src="assets/images/ocean.jpg" alt="Photo de l'océan" />
+            </div>
+            <div class="swiper-slide">
+                <img class="img_hero" src="assets/images/maison.jpg" alt="Photo de maison de campagne" />
+            </div>
+        </div>
+
+        <!-- N'oubliez pas votre pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="hero_info" >
+        <h3>Baie Ste-Catherine</h3>
+        <h1>Capitale de la zénitude et des baleines</h1>
+        <div class="button">
+            <a href="">
+                Découvre les activités
+                <svg class="icon icon--stroke button_icon">
+                    <use xlink:href="#icon-fleche"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section >
+    <div class="actualite">
+        <h3 data-scrolly='flipFromBottom'>Actualités</h3>
+            <h2 data-scrolly='flipFromBottom'>Les dernières nouvelles</h2>
+            <div class="conteneur_actu">
+                <div class="swiper-full swiper" data-component="Carousel" data-slides="1" data-loop data-split>
+                    <div class="swiper-wrapper cards">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-media" src="assets/images/panorama.jpg" alt="panorama" />
+                                <div class="card-content">
+                                    <p class="date">15 MARS 2024</p>
+                                    <h5>Communiqué</h5>
+                                    <p>Une attente qui en valait la peine ...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-media" src="assets/images/bateau.jpg" alt="panorama" />
+                                <div class="card-content">
+                                    <p class="date">19 MARS 2024</p>
+                                    <h5>Joyeuses pâques!</h5>
+                                    <p>Veuillez prendre note que ...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-media" src="assets/images/eglise.jpg" alt="panorama" />
+                                <div class="card-content">
+                                    <p class="date">28 MARS 2024</p>
+                                    <h5>Avis public</h5>
+                                    <p>Dépôt du 2e projet de règlement ...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-media" src="assets/images/vue.jpg" alt="panorama" />
+                                <div class="card-content">
+                                    <p class="date">15 MARS 2024</p>
+                                    <h5>Accès aux serveurs</h5>
+                                    <p>Serveurs haute vitesse (HIV)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-media" src="assets/images/bateau.jpg" alt="panorama" />
+                                <div class="card-content">
+                                    <p class="date">24 MAI 2024</p>
+                                    <h5>jour de pêche</h5>
+                                    <p>ses seul vacance ...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-media" src="assets/images/eglise.jpg" alt="panorama" />
+                                <div class="card-content">
+                                    <p class="date">27 MAI 2024</p>
+                                    <h5>fin du paradis</h5>
+                                    <p>Une pause trop courte...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button" data-scrolly='fromLeft'>
+                <a href="">
+                    Voir toutes les nouvelles
+                    <svg class="icon icon--stroke button_icon">
+                        <use xlink:href="#icon-fleche"></use>
+                    </svg>
+                </a>
+            </div>
+    </div>
+    
+</section>
+
+<section class="histoire">
+    <div class="wrapper">
+        <div class="histoire-containe">
+        <div class="history">
+            <img class="base" data-scrolly='fromLeft' src="./assets/images/boutique.jpg" alt="" />
+            <div class="text-on-image" data-scrolly='fromRight'>
+                <h3>Histoire</h3>
+                <h2>Anse Ste-Catherine</h2>
+                <p>
+                    Baie-Sainte-Catherine fut d’abord appelée l’Anse à la Catherine, en rappel du naufrage du vaisseau La Catherine qui, au soir d’une tempête
+                    le 27 novembre 1686, alla s’échouer dans cette anse à l’entrée du Saguenay.
+                </p>
+                <p>
+                    Ce village est connu depuis plus d’un siècle par une traverse régulière qui relie les deux rives du Saguenay, de sorte qu’il est le passage
+                    obligé pour tous ceux qui veulent aller sur la Côte Nord ou en sortir. Ce fut en premier lieu un village industriel. William Price en 1843 y
+                    construisit un moulin à scie sur la première chute de la rivière aux Canards.
+                </p>
+            </div>
+        </div>
+        <div class="mission">
+            <div class="text-on-image-reverse" data-scrolly='fromLeft'>
+                <h3>Mission</h3>
+                <h2>Comté de Saguenay</h2>
+                <p>
+                    Comté de Saguenay. Diocèse de Chicoutimi. La mission de Saint-Firmin est assez ancienne. Les premiers colons, qui venaient de la Malbaie,
+                    s'y établirent vers 1820. Une chapelle y fut construite en 1875. Elle fut desservie jusqu'en 1901 par les curés et missionnaires de
+                    Tadoussac. Un curé y réside depuis 1901, année de l'ouverture des registres de la paroisse.
+                </p>
+                <p>
+                    La desserte de Saint-Firmin comprend le canton de Saguenay, lequel fut organisé en municipalité sous le nom de «Saint-Firmin», le 4 novembre
+                    1903, par arrêté-en-Conseil. Ce territoire faisait auparavant partie de la municipalité de Tadoussac.
+                </p>
+            </div>
+            <img data-scrolly='fromRight' src="./assets/images/chantier.jpg" alt="" />
+        </div>
+    </div>
+    </div>
+    
+</section>
+<section>
+    <div class="tourisme">
+        <h3 data-scrolly='flipFromBottom'>Tourisme</h3>
+        <h2 data-scrolly='flipFromBottom'>Ce que nous pouvons offrir</h2>
+        <div class="offre">
+            <div class="produit" data-scrolly='fromTop'>
+                <div>
+                    <img src="./assets/images/fleuve.jpg" alt="un kayak sur un fleuve" />
+                </div>
+                <h5>Fleuve</h5>
+            </div>
+            <div class="produit" data-scrolly='fromBottom'>
+                <div>
+                    <img src="./assets/images/lunch.jpg" alt=" un femme qui mange" />
+                </div>
+                <h5>Événements</h5>
+            </div>
+            <div class="produit" data-scrolly='fromTop'>
+                <div>
+                    <img src="./assets/images/panorama2.jpg" alt="panorama avec vue sur un océan avec une ile au loin" />
+                </div>
+                <h5>Panorama</h5>
+            </div>
+            <div class="produit" data-scrolly='fromBottom'>
+                <div>
+                    <img src="./assets/images/paix.jpg" alt="vue sur l'océan avec une cabane au toit rouge" />
+                </div>
+                <h5>La paix</h5>
+            </div>
+        </div>
+
+        <div class="button" data-scrolly='fromLeft'>
+            <a href="">
+                Voir toutes les offres
+                <svg class="icon icon--stroke button_icon">
+                    <use xlink:href="#icon-fleche"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% include "_partials/_footer.html" %}

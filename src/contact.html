@@ -1,0 +1,334 @@
+{% include "_partials/_header.html" %}
+
+<section class="hero">
+    <img class="contact_img" src="assets/images/ocean.jpg" alt="Photo de l'océan" />
+    <div class="hero_info">
+        <h3 class="contact_h3">Nous joindre</h3>
+        <h1>Un paradis entre terre et mer à deux pas de Tadoussac</h1>
+    </div>
+</section>
+<section class="rejoindre">
+    <div class="wrapper">
+        <div class="containe">
+                <img data-scrolly="fromRotateSmallBig" src="./assets/images/map.jpg" alt="" />
+                <div class="textinfo">
+                    <h2 data-scrolly="flipFromBottom">Pour nous joindre</h2>
+                    <p data-scrolly="flipFromBottom">
+                        Édifice municipal Albert-Boulianne
+                        <br />
+                        308, rue Leclerc
+                        <br />
+                        Baie-Sainte-Catherine
+                        <br />
+                        Québec, G0T 1A0
+                    </p>
+                    <div class="linkrejoindre">
+                        <div class="link" data-scrolly="flipFromBottom">
+                            <a href="">
+                                <svg class="icon icon--lg icon--stroke">
+                                    <use xlink:href="#icon-envellope"></use>
+                                </svg>
+                            </a>
+                            <div>
+                                <h5>Courriel</h5>
+                                <p>municipalite@baiestecatherine.com</p>
+                            </div>
+                        </div>
+
+                        <div class="link" data-scrolly="flipFromBottom">
+                            <a href="">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-telephone"></use>
+                                </svg>
+                            </a>
+                            <div>
+                                <h5>Téléphone</h5>
+                                <p>418-620-5020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inforeseau">
+                        <ul>
+                            <li>
+                                <a href="" data-scrolly="flipFromBottom">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-Insta"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" data-scrolly="flipFromBottom">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-Fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" data-scrolly="flipFromBottom">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-Twiter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" data-scrolly="flipFromBottom">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-Pintrest"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+</section>
+
+<section class="formulaire">
+    <div class="wrapper">
+        <form class="form" autocomplete="off" data-component="Forme">
+            <div class="form__body">
+                <fieldset class="grid">
+                    <div class="input">
+                        <label class="input__label" for="lastname">Votre nom*</label>
+                        <input class="input__element" type="text" name="lastname" id="lastname" placeholder="ex.: Antoine" required />
+                    </div>
+                    <div class="input">
+                        <label class="input__label" for="firstname">Votre prénom*</label>
+                        <input class="input__element" type="text" name="firstname" id="firstname" placeholder="ex.: Breton" required />
+                    </div>
+                    <div class="input u-grid-fullwitdh">
+                        <label class="input__label" for="address">Votre adresse*</label>
+                        <input class="input__element" type="text" name="address" id="address" placeholder="ex.: 2020, rue du Finfin" required />
+                    </div>
+                    <div class="input select">
+                        <label class="input__label" for="ville">Ville*</label>
+                        <select name="ville" id="ville" class="input__element" required>
+                            <option value="" hidden>choisir une provience</option>
+                            <option value="on">Longueuil</option>
+                            <option value="al">Longueuil</option>
+                            <option value="qc">Longueuil</option>
+                        </select>
+                    </div>
+                    <div class="input select">
+                        <label class="input__label" for="province">Province*</label>
+                        <select name="province" id="province" class="input__element" required>
+                            <option value="" hidden>choisir une provience</option>
+                            <option value="on">ontario</option>
+                            <option value="al">Alberta</option>
+                            <option value="qc">Québec</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label class="input__label" for="phone">téléphone</label>
+                        <input
+                            class="input__element"
+                            type="tel"
+                            name="phone"
+                            id="phone"
+                            placeholder="(555)-555-5555"
+                            pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                            required
+                        />
+                    </div>
+                    <div class="u-grid-fullwitdh">
+                        <p>Méthode pour vous joindre*</p>
+                        <div class="form__list" data-input-container>
+                            <div class="input radio">
+                                <input
+                                    class="input__element"
+                                    type="radio"
+                                    name="contact_method"
+                                    id="email_method"
+                                    value="email"
+                                    required
+                                />
+                                <label class="input__label" for="email_method">Courriel</label>
+                            </div>
+                            <div class="input radio">
+                                <input
+                                    class="input__element"
+                                    type="radio"
+                                    name="contact_method"
+                                    id="phone_method"
+                                    value="phone"
+                                    required
+                                />
+                                <label class="input__label space" for="phone_method">Téléphone</label>
+                            </div>
+                        </div>
+                    </div>
+                
+                     <h5>Requête citoyenne</h5>
+
+                    <div class="input select u-grid-fullwitdh">
+                        <label class="input__label" for="sujet">Sujet*</label>
+                        <select name="sujet" id="sujet" class="input__element" required>
+                            <option value="" hidden>choisir une provience</option>
+                            <option value="on">Permis de stationnement</option>
+                            <option value="al">permis de chasse</option>
+                            <option value="qc">permis de boisson</option>
+                        </select>
+                    </div>
+
+                    <div class="input textarea u-grid-fullwitdh">
+                        <label class="input__label" for="comment">Commentaire</label>
+                        <textarea class="input__element" name="comment" id="comment" maxlength="500"></textarea>
+                    </div>
+                    <div class="input checkbox u-grid-fullwitdh">
+                        <label class="sub" for="joindre"> Méthode pour vous joindre*</label>
+                        <input class="input__element" type="checkbox" name="joindre[]" id="joindre" value="true" required/>
+                        <label class="text input__label" for="joindre">je veux être informé des prochaines actions</label>
+                    </div>
+                    <footer class="form__footer">
+                        <button class="button">            
+                                    Envoyer
+                                    <svg class="icon icon--stroke button_icon">
+                                        <use xlink:href="#icon-fleche"></use>
+                                    </svg>
+                        </button>
+                    </footer>
+                </fieldset>
+            </div>
+
+            <div class="form__confirmation">
+                <h2>Merci</h2>
+                <p>je t'ai volé toutes vos informations personnelles. Passez malgré tout une bonne journée.</p>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="question" data-component="Accordion" data-auto-open>
+    <h3>question</h3>
+    <h2 class="titre">Connaissez-nous mieux</h2>
+    <div class="accordion__container js-header">
+        <div class="accordion__header">
+            <h5>Qu'est-ce que la MRC de Baie Ste-Catherine?</h5>
+            <button class="question__toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="accordion__content">
+            <p>La MRC de Baie Ste-Catherine est une municipalité régionale de comté située dans la région administrative de la Côte-Nord au Québec, Canada.</p>
+        </div>
+    </div>
+    <div class="accordion__container js-header" data-auto-open>
+        <div class="accordion__header">
+            <h5>Quelle est la population de la MRC de Baie Ste-Catherine?</h5>
+            <button class="question__toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="accordion__content">
+            <p>Selon le recensement de 2016, la population de la MRC de Baie Ste-Catherine est de 3 229 habitants.</p>
+        </div>
+    </div>
+    <div class="accordion__container js-header">
+        <div class="accordion__header">
+            <h5>Quels sont les principaux secteurs économiques de la MRC de Baie Ste-Catherine?</h5>
+            <button class="question__toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="accordion__content">
+            <p>Les principales industries de la MRC de Baie Ste-Catherine sont la pêche, le transport maritime, le tourisme et l'agriculture.</p>
+        </div>
+    </div>
+    <div class="accordion__container js-header">
+        <div class="accordion__header">
+            <h5>Quels sont les attraits touristiques de la MRC de Baie Ste-Catherine?</h5>
+            <button class="question__toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="accordion__content">
+            <p>
+                La MRC de Baie Ste-Catherine est connue pour sa proximité avec les baleines, ce qui en fait une destination populaire pour les excursions
+                d'observation des baleines. Elle compte également de nombreux sentiers de randonnée, des plages, des musées et des festivals tout au long de
+                l'année.
+            </p>
+        </div>
+    </div>
+    <div class="accordion__container js-header">
+        <div class="accordion__header">
+            <h5>Quels sont les services offerts par la MRC de Baie Ste-Catherine à ses citoyens?</h5>
+            <button class="question__toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="accordion__content">
+            <p>
+                La MRC de Baie Ste-Catherine offre une gamme de services à ses citoyens, notamment des services de gestion des déchets, des services de
+                protection contre les incendies, des services de développement économique et touristique et des services de transport en commun.
+            </p>
+        </div>
+    </div>
+    <div class="accordion__container js-header">
+        <div class="accordion__header">
+            <h5>Quels sont les événements annuels organisés par la MRC de Baie Ste-Catherine?</h5>
+            <button class="question__toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="accordion__content">
+            <p>
+                La MRC de Baie Ste-Catherine organise plusieurs événements tout au long de l'année, tels que la Fête de la pêche, la Journée internationale des
+                femmes, la Fête de la musique et le Tournoi de hockey Baie Ste-Catherine.
+            </p>
+        </div>
+    </div>
+    <div class="accordion__container js-header">
+        <div class="accordion__header">
+            <h5>Quels sont les projets en cours dans la MRC de Baie Ste-Catherine?</h5>
+            <button class="question__toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="accordion__content">
+            <p>
+                La MRC de Baie Ste-Catherine travaille actuellement sur plusieurs projets, notamment le développement d'un parc industriel et l'amélioration des
+                infrastructures de transport.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section >
+    <div class="wrapper video">
+        <div class="video_presentation">
+            <h3 data-scrolly="flipFromBottom">Vidéos</h3>
+            <h2 data-scrolly="flipFromBottom">La ville en mouvement</h2>
+        </div>
+
+        <div class="grid-2">
+            <div class="youtube" data-component="Youtube" data-youtube-id="q5vhZM59Bdk?si=Sj0LDeSUL2TwveGb" data-no-rel>
+                <div class="youtube__media js-youtube">
+                    <img class="js-poster" src="assets/images/couche_soleil.jpg" alt="spectacle de musique" />
+                    <svg class="icon icon--xl">
+                        <use xlink:href="#icon-play"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="youtube" data-component="Youtube" data-youtube-id="kcfs1-ryKWE?si=TGzAdVFAu08AZ98A" data-no-rel>
+                <div class="youtube__media js-youtube">
+                    <img class="js-poster" src="assets/images/paixv2.jpg" alt="spectacle de musique" />
+                    <svg class="icon icon--xl">
+                        <use xlink:href="#icon-play"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Votre contenu ici -->
+
+{% include "_partials/_footer.html" %}
